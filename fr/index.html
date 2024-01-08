@@ -1,11 +1,115 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site d'informations sur le film Oppenheimer">
+    <link rel="stylesheet" href="/src/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
     <title>Oppenheimer - Page d'accueil</title>
 </head>
 <body>
-    
+    <header class="header">
+        <a href="./index.html">
+            <img src="/public/img/OPPENHEIMER.svg" alt="Logo du site" class="header_logo">
+        </a>
+        <button class="header__menu" aria-controls="mainNav" @click="menuIsOpen = true" x-bind:class="{ 'header__menu--hidden': menuIsOpen }">
+            <img class="header__menu-btn" src="/public/img/menu-open.svg" alt="Boutton du menu">
+        </button>
+        <nav id="mainNav" x-show = "menuIsOpen" x-transition.duration.750ms class="menu">
+            <button class="menu__button" aria-controls="mainNav" @click="menuIsOpen = false">
+                <img class="menu__button-btn" src="/public/img/menu-closed.svg" alt="Croix pour fermer le menu">
+            </button>
+            <ul class="menu__pages">
+                <li class="menu__obj"><a href="/fr/quote.html" class="menu__obj-lien">LA THÉORIE</a></li>
+                <li class="menu__obj"><a href="/fr/films.html" class="menu__obj-lien">OPPENHEIMER</a></li>
+                <li class="menu__obj"><a href="/fr/realisateur.html" class="menu__obj-lien">C. NOLAN</a></li>
+                <li class="menu__obj"><a href="/fr/books.html" class="menu__obj-lien">MICHEL RIVAL</a></li>
+                <li class="menu__obj"><a href="/fr/music.html" class="menu__obj-lien">LA B.O</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="main__hero">
+            <img src="/public/img/Op1.webp" alt="Photographie de Cylian Murphy en Oppenheimer" class="main__hero--img">
+            <h1 class="main__hero--title">OPPENHEIMER</h1>
+            <img src="/public/img/arrow.svg" alt="" class="main__hero--arrow">
+        </section>
+        <section class="main__info">
+            <h2 class="main__info--title">“La théorie à ses limites.”</h2>
+            <span class="main__info--span"></span>
+            <p class="main__info--text">Découvrez les différents aspects de cette réplique, à travers cinq articles principaux !
+            </p>
+        </section>
+        <section class="main__cards">
+            <div class="main__cards1">
+                <h4 class="main__cards1--title">LA RÉPLIQUE</h4>
+                <p class="main__cards1--text">analyse du sens, du contexte et de la portée de cette phrase.</p>
+                <img src="" alt="" class="main__cards1--img">
+                <button class="main__cards1--button">EN SAVOIR PLUS</button>
+            </div>
+            <div class="main__cards1">
+                <h4 class="main__cards1--title">LES FILMS</h4>
+                <p class="main__cards1--text">synopsis, critique, anecdotes et extrait du film Oppenheimer.</p>
+                <img src="" alt="" class="main__cards1--img">
+                <button class="main__cards1--button">EN SAVOIR PLUS</button>
+            </div>
+            <div class="main__cards1">
+                <h4 class="main__cards1--title">LE RÉALISATEUR</h4>
+                <p class="main__cards1--text">analyse du sens, du contexte et de la portée de cette phrase.</p>
+                <img src="" alt="" class="main__cards1--img">
+                <button class="main__cards1--button">EN SAVOIR PLUS</button>
+            </div>
+            <div class="main__cards1">
+                <h4 class="main__cards1--title">LES LIVRES</h4>
+                <p class="main__cards1--text">présentation du livre Robert Oppenheimer de Michel Rival et d’autres livres en lien</p>
+                <img src="" alt="" class="main__cards1--img">
+                <button class="main__cards1--button">EN SAVOIR PLUS</button>
+            </div>
+            <div class="main__cards1">
+                <h4 class="main__cards1--title">LA MUSIQUE</h4>
+                <p class="main__cards1--text">présentation de la musique Can You Hear The Music de Ludwig Göransson</p>
+                <img src="" alt="" class="main__cards1--img">
+                <button class="main__cards1--button">EN SAVOIR PLUS</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__title">
+            <span class="footer__title--down"></span>
+            <h3 class="footer__title--text">OPPENHEIMER</h3>
+            <span class="footer__title--left"></span>
+            <img src="/public/img/dot.svg" alt="Point de séparation" class="footer__title--dot">
+            <span class="footer__title--right"></span>
+        </div>
+        <div class="footer__pages">
+            <ul class="footer__pages--list">
+                <li class="footer__pages--obj"><a href="/fr/quote.html" class="footer__pages--lien">A propos</a></li>
+                <li class="footer__pages--obj"><a href="/fr/films.html" class="footer__pages--lien">Autres projets</a></li>
+                <li class="footer__pages--obj"><a href="/fr/realisateur.html" class="footer__pages--lien">Contact</a></li>
+                <li class="footer__pages--obj"><a href="/fr/books.html" class="footer__pages--lien">Glossaire</a></li>
+            </ul>
+        </div>
+        <div class="footer__mentions">
+            <span class="footer__mentions--left"></span>
+            <img src="/public/img/dot.svg" alt="Point de séparation" class="footer__mentions--dot">
+            <span class="footer__mentions--right"></span>
+            <p class="footer__mentions--text">Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="" class="footer__mentions--lien">MMI de Montbéliard</a></p>
+            <span class="footer__mentions--left"></span>
+            <img src="/public/img/dot.svg" alt="Point de séparation" class="footer__mentions--dot">
+            <span class="footer__mentions--right"></span>
+            <p class="footer__mentions--text">© 2023 Oppenheimer - Tous droits réservés - Développé avec ❤️ par Tony MORETTI</p>
+            <span class="footer__mentions--left"></span>
+            <img src="/public/img/dot.svg" alt="Point de séparation" class="footer__mentions--dot">
+            <span class="footer__mentions--right"></span>
+        </div>
+        <div class="footer__social">
+            <h4 class="footer__social--title">Nous suivre</h4>
+            <a href="https://www.instagram.com/"><img src="/public/img/instagram.svg" alt="Logo d'Instagram" class="footer__social--img"></a>
+            <a href="https://www.facebook.com/"><img src="/public/img/facebook.svg" alt="Logo de Facebook" class="footer__social--img"></a>
+            <a href="https://twitter.com/"><img src="/public/img/twitter.svg" alt="Logo de Twitter" class="footer__social--img"></a>
+        </div>
+    </footer>
 </body>
 </html>
