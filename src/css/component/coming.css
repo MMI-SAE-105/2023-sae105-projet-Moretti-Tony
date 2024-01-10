@@ -15,16 +15,17 @@
 }
 
 .main__coming--button {
-    display: inline-block;
-    justify-content: center;
-    padding: 10px 20px;
-    border: 2px solid var(--white);
-    text-decoration: none;
-    color: black;
-    font-size: 1.5rem;
+    width: 200px;
+    height: 40px;
+    border: 2px;
+    border-color: var(--white);
+    border-radius: 50px;
+    background-color: transparent;
+    margin: 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .main__coming--link {
     text-align: center;
-    color: var(--white);
 }
