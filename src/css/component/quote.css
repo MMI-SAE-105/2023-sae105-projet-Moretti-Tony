@@ -1,0 +1,30 @@
+.main__article1--title {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.main__article2--title {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.main__article1--text {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.main__article2--list {
+    margin-right: 1.5rem;
+}
+
+.main__redac {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.main__redac--text {
+    text-align: right;
+    font-weight: bold;
+}

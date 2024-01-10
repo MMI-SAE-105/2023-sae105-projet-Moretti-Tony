@@ -14,12 +14,13 @@
 
 @import "component/coming.css";
 @import "component/hero.css";
+@import "component/quote.css";
 
 
 
 @font-face {
     font-family: 'Silk Serif';
-    src: url('../fonts/Silk\ Serif\ Regular.otf') format("opentype");
+    src: url("/src/fonts/Silk\ Serif\ Regular.otf");
          font-display: swap;
          font-style: normal;
   }
