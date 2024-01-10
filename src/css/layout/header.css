@@ -116,3 +116,10 @@
     height: 100%;
     filter: invert(1);
 }
+
+.header__language {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
