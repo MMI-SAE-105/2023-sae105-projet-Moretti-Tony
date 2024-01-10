@@ -1,11 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Site d'informations sur le film Oppenheimer">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>Oppenheimer - La Musique</title>
 </head>
 <body>
-    
+    <header class="header">
+        <a href="./index.html">
+            <img src="/public/img/OPPENHEIMER.svg" alt="Logo du site" class="header_logo">
+        </a>
+        <a href="./index.html">
+            <p class="header__language">FR</p>
+        </a>
+        <button class="header__menu" aria-controls="mainNav" @click="menuIsOpen = true" x-bind:class="{ 'header__menu--hidden': menuIsOpen }">
+            <img class="header__menu-btn" src="/public/img/menu-open.svg" alt="Boutton du menu">
+        </button>
+        <nav id="mainNav" x-show = "menuIsOpen" x-transition.duration.750ms class="menu">
+            <button class="menu__button" aria-controls="mainNav" @click="menuIsOpen = false">
+                <img class="menu__button-btn" src="/public/img/menu-closed.svg" alt="Croix pour fermer le menu">
+            </button>
+            <ul class="menu__pages">
+                <li class="menu__obj"><a href="/fr/quote.html" class="menu__obj-lien">LA RÉPLIQUE</a></li>
+                <li class="menu__obj"><a href="/fr/films.html" class="menu__obj-lien">LES FILMS</a></li>
+                <li class="menu__obj"><a href="/fr/realisateur.html" class="menu__obj-lien">LE RÉALISATEUR</a></li>
+                <li class="menu__obj"><a href="/fr/books.html" class="menu__obj-lien">LES LIVRES</a></li>
+                <li class="menu__obj"><a href="/fr/music.html" class="menu__obj-lien">LA MUSIQUE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="main__hero">
+            <h1 class="main__hero--title">La Musique</h1>
+            <span class="main__hero--spanup"></span>
+            <h2 class="main__hero--title2">Un chef d’oeuvre audible.</h2>
+            <span class="main__hero--spandown"></span>
+            <p class="main__hero--text">
+                Can You Hear The Music est le titre du morceau qui ouvre et clôture le film Oppenheimer, réalisé par Christopher Nolan en 2023.
+            </p>
+            <span class="main__hero--spanmid"></span>
+        </section>
+        <section class="main__article">
+            <div class="main__article1">
+                <h3 class="main__article1--title">Compositeur</h3>
+                <p class="main__article1--text">
+                    Le morceau est composé par Ludwig Göransson, un musicien suédois qui a déjà collaboré avec Christopher Nolan sur le film Tenet en 2020. Il est également connu pour avoir composé la musique de films comme Black Panther, Creed ou The Mandalorian.
+                </p>
+                <img src="/public/img/4k-Cilyan-2.webp" alt="" class="main__article1--img">
+                <span class="main__article1--spanmid"></span>
+            </div>
+            <div class="main__article2">
+                <img src="/public/img/2.webp" alt="" class="main__article2--img">
+                <h3 class="main__article2--title">Le Morceau</h3>
+                <p class="main__article2--text">Le morceau dure environ 8 minutes et se divise en trois parties :</p>
+                <ul class="main__article2--list">
+                    <li class="main__article2--obj">La première partie est une introduction orchestrale, qui évoque le génie scientifique d’Oppenheimer et son ambition de créer la bombe atomique. On entend des cordes, des cuivres et des percussions qui créent une atmosphère solennelle et majestueuse.</li>
+                    <li class="main__article2--obj">La deuxième partie est une montée en puissance, qui illustre le développement du projet Manhattan et les tensions politiques et morales qui l’entourent. On entend des sons électroniques, des synthétiseurs et des effets sonores qui créent une atmosphère angoissante et oppressante.</li>
+                    <li class="main__article2--obj">La troisième partie est un climax, qui correspond à l’explosion de la bombe atomique et à ses conséquences. On entend des voix féminines, des chants orientaux et des instruments traditionnels comme le sitar ou le oud, qui créent une atmosphère mélancolique et tragique.</li>
+                </ul>
+                <p class="main__article2--text">Le morceau se termine par un silence, qui symbolise le vide laissé par la destruction nucléaire.</p>
+                <figure class="main__article2--music">
+                    <audio controls src="/public/audio/CanYouHearTheMusic.mp3"></audio>
+                    <figcaption>Ludwig Göransson — Can You Hear The Music</figcaption>
+                </figure>
+                <img src="/public/img/4k-Cilyan.webp" alt="" class="main__article2--img">
+                <p class="main__article2--text">Le morceau n’a pas de paroles à proprement parler, mais il utilise des extraits de discours ou de textes liés à Oppenheimer ou à la bombe atomique. On peut reconnaître :</p>
+                <ul class="main__article2--list">
+                    <li class="main__article2--obj">La citation du Bhagavad-Gita prononcée par Oppenheimer après le premier essai nucléaire : “Je suis devenu la mort, le destructeur des mondes.”</li>
+                    <li class="main__article2--obj">Le discours du président Truman annonçant l’attaque sur Hiroshima : “A single bomb of this type carried by boat and exploded in a port might very well destroy the whole port together with some of the surrounding territory.”</li>
+                    <li class="main__article2--obj">Le poème d’Arthur Rimbaud intitulé “Ophélie”, qui évoque la mort d’une jeune femme noyée dans une rivière : “Sur l’azur sombre où la noire fontaine jaillit / Blanche Ophélia flotte comme un grand lys / Flotte très lentement couchée en ses longs voiles.”</li>
+                    <li class="main__article2--obj">Le discours d’Oppenheimer devant une commission de sécurité en 1954 : “I have been loyal to the United States and I have done no wrong.”</li>
+                </ul>
+                <img src="/public/img/ludwig.webp" alt="" class="main__article2--img">
+                <p class="main__article2--text">Le morceau est donc une œuvre musicale originale et ambitieuse, qui accompagne parfaitement le film Oppenheimer. Il exprime les sentiments contradictoires que suscite la bombe atomique : admiration, terreur, culpabilité ou regret.</p>
+            </div>
+            <div class="main__redac">
+                <p class="main__redac--text">Rédigé par <span class="main__redac--name">Tony Moretti</span> publié aujourd’hui à 07h54</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__title">
+            <span class="footer__title--down"></span>
+            <h3 class="footer__title--text">OPPENHEIMER</h3>
+            <span class="footer__title--left"></span>
+            <img src="/public/img/dot.svg" alt="Point de séparation" class="footer__title--dot">
+            <span class="footer__title--right"></span>
+        </div>
+        <div class="footer__pages">
+            <ul class="footer__pages--list">
+                <li class="footer__pages--obj"><a href="/fr/about.html" class="footer__pages--lien">A propos</a></li>
+                <li class="footer__pages--obj"><a href="/fr/projects.html" class="footer__pages--lien">Autres projets</a></li>
+                <li class="footer__pages--obj"><a href="/fr/contact.html" class="footer__pages--lien">Contact</a></li>
+                <li class="footer__pages--obj"><a href="/fr/glossary.html" class="footer__pages--lien">Glossaire</a></li>
+            </ul>
+        </div>
+        <div class="footer__mentions">
+            <span class="footer__mentions--left"></span>
+            <img src="/public/img/dot.svg" alt="Point de séparation" class="footer__mentions--dot">
+            <span class="footer__mentions--right"></span>
+            <p class="footer__mentions--text">Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="" class="footer__mentions--lien">MMI de Montbéliard</a></p>
+            <span class="footer__mentions--left"></span>
+            <img src="/public/img/dot.svg" alt="Point de séparation" class="footer__mentions--dot">
+            <span class="footer__mentions--right"></span>
+            <p class="footer__mentions--text">© 2023 Oppenheimer - Tous droits réservés - Développé avec ❤️ par Tony MORETTI</p>
+            <span class="footer__mentions--left"></span>
+            <img src="/public/img/dot.svg" alt="Point de séparation" class="footer__mentions--dot">
+            <span class="footer__mentions--right"></span>
+        </div>
+        <div class="footer__social">
+            <h4 class="footer__social--title">Nous suivre</h4>
+            <a href="https://www.instagram.com/"><img src="/public/img/instagram.svg" alt="Logo d'Instagram" class="footer__social--img"></a>
+            <a href="https://www.facebook.com/"><img src="/public/img/facebook.svg" alt="Logo de Facebook" class="footer__social--img"></a>
+            <a href="https://twitter.com/"><img src="/public/img/twitter.svg" alt="Logo de Twitter" class="footer__social--img"></a>
+        </div>
+    </footer>
 </body>
 </html>

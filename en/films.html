@@ -1,11 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll: menuIsOpen,}">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Information site about the Oppenheimer film">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>Oppenheimer - The Films</title>
 </head>
 <body>
-    
+    <header class="header">
+        <a href="./index.html">
+            <img src="/public/img/OPPENHEIMER.svg" alt="Site logo" class="header_logo">
+        </a>
+        <a href="./index.html">
+            <p class="header__language">EN</p>
+        </a>
+        <button class="header__menu" aria-controls="mainNav" @click="menuIsOpen = true" x-bind:class="{ 'header__menu--hidden': menuIsOpen }">
+            <img class="header__menu-btn" src="/public/img/menu-open.svg" alt="Menu button">
+        </button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.750ms class="menu">
+            <button class="menu__button" aria-controls="mainNav" @click="menuIsOpen = false">
+                <img class="menu__button-btn" src="/public/img/menu-closed.svg" alt="Cross to close the menu">
+            </button>
+            <ul class="menu__pages">
+                <li class="menu__obj"><a href="/en/quote.html" class="menu__obj-lien">THE QUOTE</a></li>
+                <li class="menu__obj"><a href="/en/films.html" class="menu__obj-lien">THE FILMS</a></li>
+                <li class="menu__obj"><a href="/en/realisator.html" class="menu__obj-lien">THE DIRECTOR</a></li>
+                <li class="menu__obj"><a href="/en/books.html" class="menu__obj-lien">THE BOOKS</a></li>
+                <li class="menu__obj"><a href="/en/music.html" class="menu__obj-lien">THE MUSIC</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="main__hero">
+            <h1 class="main__hero--title">The Films</h1>
+            <span class="main__hero--spanup"></span>
+            <h2 class="main__hero--title2">Oppenheimer, the film that explodes the box office.</h2>
+            <span class="main__hero--spandown"></span>
+            <p class="main__hero--text">
+                Oppenheimer is a film directed by Christopher Nolan in 2023. It tells the story of Robert Oppenheimer, the American physicist who led the Manhattan Project, the secret program that produced the first atomic bombs during World War II.
+            </p>
+            <span class="main__hero--spanmid"></span>
+        </section>
+        <section class="main__article">
+            <div class="main__article1">
+                <h3 class="main__article1--title">Synopsis</h3>
+                <p class="main__article1--text">
+                    In 1939, Oppenheimer discovers the Nazi nuclear threat and joins the Manhattan Project led by General Groves. With renowned scientists, they design the first atomic bomb despite ethical dilemmas. The story reaches its climax with the 1945 Trinity nuclear test, leaving Oppenheimer fascinated and horrified, quoting the Bhagavad-Gita, expressing guilt and regret.
+                </p>
+                <video class="main__article1--video" src="https://tonymoretti.fr/video/HDROPH.webm" controls></video>
+                <p class="main__article1--text">
+                    The film concludes with the atomic bombings of Hiroshima and Nagasaki, ending the war. Oppenheimer becomes globally famous but also a target for U.S. enemies. He undergoes a smear campaign, ruins his reputation and career. He witnesses the rise of tensions between the U.S. and the Soviet Union in a nuclear arms race. He dies in 1967, haunted by remorse and bitterness.
+                </p>
+                <span class="main__article1--spanmid"></span>
+            </div>
+            <div class="main__article2">
+                <img src="/public/img/11.webp" alt="" class="main__article2--img">
+                <h3 class="main__article2--title">Review</h3>
+                <p class="main__article2--text">
+                    Oppenheimer, Christopher Nolan's film, brilliantly blends science fiction, thriller, and drama. It offers a captivating historical epic, exploring the tragic and exceptional life of Oppenheimer while delving into the backstage of the Manhattan Project, exposing technical challenges, military secrets, human conflicts, and ethical and political issues of creating the atomic bomb. Impeccable direction, stunning cinematography, enchanting soundtrack, and skillful use of special effects, flashbacks, and ellipses create a captivating and rhythmic narrative. The cast, led by Benedict Cumberbatch, brings characters to life with talent and charisma, offering a deep and nuanced exploration of Oppenheimer's emotions and complexity as an ambiguous character.
+                </p>
+                <p class="main__article2--text">
+                    Oppenheimer is a film that not only explodes the box office but also minds. It is a film that introduces us to an unknown page of history, makes us reflect on the role of science in society, and evokes strong emotions. It is a film that makes us realize that theory has its limits.
+                </p>
+            </div>
+            <div class="main__article3">
+                <h3 class="main__article3--title">Christopher Nolan's Best Films</h3>
+                <div class="main__article3--cards">
+                    <div class="main__article3--card">
+                        <h4 class="main__article3--cardtitle">MEMENTO (2000)</h4>
+                        <img src="/public/img/memento.webp" alt="" class="main__article3--cardimg">
+                        <p class="main__article3--cardtext">
+                            A captivating psychological thriller that follows the story of Leonard Shelby, a man seeking revenge after the brutal assault and murder of his wife. The film is constructed with reverse editing that reflects the protagonist's faulty memory.
+                        </p>
+                    </div>
+                    <div class="main__article3--card">
+                        <h4 class="main__article3--cardtitle">INCEPTION (2010)</h4>
+                        <img src="/public/img/inception.webp" alt="" class="main__article3--cardimg">
+                        <p class="main__article3--cardtext">
+                            An action and science-fiction film that explores the world of dreams and the power of imagination. The film follows a team of extraction experts who must implant an idea in the mind of an industrial heir. The film is famous for its spectacular scenes and ambiguous ending.
+                        </p>
+                    </div>
+                    <div class="main__article3--card">
+                        <h4 class="main__article3--cardtitle">INTERSTELLAR (2014)</h4>
+                        <img src="/public/img/interstellar.webp" alt="" class="main__article3--cardimg">
+                        <p class="main__article3--cardtext">
+                            A science-fiction odyssey that breaks the barriers of time and space, coupled with a heartbreaking family narrative. The film tells the journey of a group of astronauts searching for a new habitable planet to save humanity threatened by ecological catastrophe.
+                        </p>
+                    </div>
+                    <div class="main__article3--card">
+                        <h4 class="main__article3--cardtitle">DUNKIRK (2017)</h4>
+                        <img src="/public/img/dunkirk.webp" alt="" class="main__article3--cardimg">
+                        <p class="main__article3--cardtext">
+                            A war drama that recounts the evacuation of Allied troops surrounded by Nazi forces on the Dunkirk beach in 1940. The film is divided into three parts following the action on land, at sea, and in the air, with different timelines.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__redac">
+                <p class="main__redac--text">Written by <span class="main__redac--name">Tony Moretti</span> published today at 07:54 AM</p>
+            </div>
+        </section>
+        <section class="main__coming">
+            <p class="main__coming--text">coming soon:</p>
+            <h2 class="main__coming--title">THE DIRECTOR</h2>
+            <button class="main__coming--button"><a href="/en/director.html" class="main__coming--link">READ THE NEXT ARTICLE</a></button>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__title">
+            <span class="footer__title--down"></span>
+            <h3 class="footer__title--text">OPPENHEIMER</h3>
+            <span class="footer__title--left"></span>
+            <img src="/public/img/dot.svg" alt="Separation point" class="footer__title--dot">
+            <span class="footer__title--right"></span>
+        </div>
+        <div class="footer__pages">
+            <ul class="footer__pages--list">
+                <li class="footer__pages--obj"><a href="/en/about.html" class="footer__pages--lien">About</a></li>
+                <li class="footer__pages--obj"><a href="/en/projects.html" class="footer__pages--lien">Other Projects</a></li>
+                <li class="footer__pages--obj"><a href="/en/contact.html" class="footer__pages--lien">Contact</a></li>
+                <li class="footer__pages--obj"><a href="/en/glossary.html" class="footer__pages--lien">Glossary</a></li>
+            </ul>
+        </div>
+        <div class="footer__mentions">
+            <span class="footer__mentions--left"></span>
+            <img src="/public/img/dot.svg" alt="Separation point" class="footer__mentions--dot">
+            <span class="footer__mentions--right"></span>
+            <p class="footer__mentions--text">Project carried out as part of an educational exercise at the <a href="" class="footer__mentions--lien">MMI department of Montbéliard</a></p>
+            <span class="footer__mentions--left"></span>
+            <img src="/public/img/dot.svg" alt="Separation point" class="footer__mentions--dot">
+            <span class="footer__mentions--right"></span>
+            <p class="footer__mentions--text">© 2023 Oppenheimer - All rights reserved - Developed with ❤️ by Tony MORETTI</p>
+            <span class="footer__mentions--left"></span>
+            <img src="/public/img/dot.svg" alt="Separation point" class="footer__mentions--dot">
+            <span class="footer__mentions--right"></span>
+        </div>
+        <div class="footer__social">
+            <h4 class="footer__social--title">Follow Us</h4>
+            <a href="https://www.instagram.com/"><img src="/public/img/instagram.svg" alt="Instagram logo" class="footer__social--img"></a>
+            <a href="https://www.facebook.com/"><img src="/public/img/facebook.svg" alt="Facebook logo" class="footer__social--img"></a>
+            <a href="https://twitter.com/"><img src="/public/img/twitter.svg" alt="Twitter logo" class="footer__social--img"></a>
+        </div>
+    </footer>
 </body>
 </html>

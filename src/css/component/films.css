@@ -1,0 +1,51 @@
+.main__article1--title {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.main__article2--title {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.main__article1--text {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.main__article2--list {
+    margin-right: 1.5rem;
+}
+
+.main__article1--video {
+    width: 100%;
+}
+
+.main__article3--title {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.main__article3--card {
+    justify-content: center;
+}
+
+.main__article3--cardtitle {
+    text-align: center;
+}
+
+.main__article3--cardimg {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    height: 75%;
+}
+
+.main__article3--cardtext {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

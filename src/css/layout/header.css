@@ -7,24 +7,29 @@
 }
 
 .header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     height: 100px;
-    position: absolute;
+    position: fixed;
+    top: 0;
     padding: 1rem;
 }
 
 .header__logo {
     max-width: 12rem;
+    filter: invert(1);
+}
+.header__link-logo {
+    justify-self: flex-start;
 }
 
 .header__menu{
     background: transparent;
     height: 2rem;
     width: 2rem;
-    margin-left: 2.5rem;
+    
 }
 
 .menu {
@@ -87,15 +92,6 @@
     margin-bottom: 44px;
 }
 
-.header {
-    font-family: Calibre, sans-serif;
-    color: var(--white);
-    display: flex;
-    top: 0;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-}
 
 .header__logo {
     width: 10rem;
@@ -118,4 +114,5 @@
 .header__menu-btn {
     width: 100%;
     height: 100%;
+    filter: invert(1);
 }
