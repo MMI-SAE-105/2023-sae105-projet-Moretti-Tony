@@ -6,7 +6,7 @@
     --dark-gray: #222222;
     --orange: #ffa500;
 
-    --font-family-1: 'Calibre';
-    --font-family-2: 'Gotham';
-    --font-family-3: 'SilkSerif';
+    --font-family-1: 'Calibre', "Helvetica";
+    --font-family-2: 'Gotham', "Helvetica";
+    --font-family-3: 'SilkSerif', "Helvetica";
 }

@@ -1,0 +1,120 @@
+/* Définir la fonte et la couleur du footer */
+.footer {
+    font-family: Calibre, sans-serif;
+    color: var(--white);
+    background-color: var(--dark);
+    padding: 2rem;
+}
+
+/* Centrer le contenu du footer */
+.footer__title,
+.footer__pages,
+.footer__mentions,
+.footer__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Définir le style du logo */
+.footer__title--text {
+    font-family: Silk Serif, serif;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+/* Définir le style des lignes et du point de séparation */
+.footer__title--down {
+    width: 0.1rem;
+    height: 4rem;
+    background-color: var(--white);
+    margin: 0.5rem;
+}
+
+.footer__title--left,
+.footer__title--right,
+.footer__mentions--left,
+.footer__mentions--right {
+    width: 50%;
+    height: 0.1rem;
+    background-color: var(--white);
+    margin: 0.5rem 0;
+}
+
+.footer__title--dot,
+.footer__mentions--dot {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.footer__title--left,
+.footer__mentions--left {
+    margin-right: auto;
+}
+
+.footer__title--right,
+.footer__mentions--right {
+    margin-left: auto;
+}
+
+/* Définir le style de la liste des pages */
+.footer__pages--list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__pages--lien {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Définir le style des mentions légales */
+.footer__mentions--text {
+    font-weight: 300;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.footer__mentions--lien {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Définir le style des réseaux sociaux */
+.footer__social--title {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.footer__social--img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+}
+
+.footer__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Rendre le footer responsive pour les écrans plus petits */
+@media screen and (max-width: 768px) {
+    .footer__pages--list {
+        flex-direction: column;
+    }
+
+    .footer__social {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}

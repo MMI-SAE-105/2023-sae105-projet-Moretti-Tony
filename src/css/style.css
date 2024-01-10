@@ -3,3 +3,33 @@
 
 /* Variables */
 @import "utils/variables.css";
+
+/* Base */
+@import "base/main.css";
+@import "base/index.css";
+
+/* Layout */
+@import "layout/header.css";
+@import "layout/footer.css";
+
+
+@font-face {
+    font-family: 'Silk Serif';
+    src: url('../fonts/Silk\ Serif\ Regular.otf') format("opentype");
+         font-display: swap;
+         font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Calibre';
+    src: url('../fonts/CalibreRegular.otf') format("opentype");
+         font-display: swap;
+         font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Silk Serif';
+    src: url('../fonts/GothamMedium.ttf') format("opentype");
+         font-display: swap;
+         font-style: normal;
+  }

@@ -1,0 +1,23 @@
+body {
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+p {
+    display: block;
+    margin: 0 1rem;
+}
