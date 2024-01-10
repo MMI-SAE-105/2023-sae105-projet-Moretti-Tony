@@ -12,6 +12,10 @@
 @import "layout/header.css";
 @import "layout/footer.css";
 
+@import "component/coming.css";
+@import "component/hero.css";
+
+
 
 @font-face {
     font-family: 'Silk Serif';
