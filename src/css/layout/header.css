@@ -1,3 +1,27 @@
 .header__menu--hidden {
     display: none;
 }
+
+.noscroll {
+    overflow: hidden;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    position: absolute;
+}
+
+.header__logo {
+    max-width: 12rem;
+}
+
+.header__menu{
+    background: transparent;
+    height: 2rem;
+    width: 2rem;
+    margin-left: 2.5rem;
+}
