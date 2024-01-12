@@ -4,6 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 - Page Not Found</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+
+:root {
+    --dark: #1a1a1a;
+    --white: #ffffff;
+    --gray: #bfbfbf;
+    --red: #ff0000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    font-family: Poppins, sans-serif;
+    color: var(--white);
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main__title {
+    font-size: 10rem;
+    font-weight: 600;
+    text-shadow: 0.5rem 0.5rem var(--red);
+    animation: shake 1s infinite;
+}
+
+.main__subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1rem;
+}
+
+.main__button {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--white);
+    border: 0.1rem solid var(--white);
+    padding: 0.5rem 1rem;
+    transition: all 0.3s;
+}
+
+.main__button:hover {
+    color: var(--dark);
+    background-color: var(--white);
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-0.5rem);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(0.5rem);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+    </style>
 </head>
 <body>
     <!-- Contenu principal -->
