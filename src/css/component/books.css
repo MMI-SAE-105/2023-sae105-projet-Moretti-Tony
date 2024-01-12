@@ -6,6 +6,7 @@
 .main__article2--title {
     margin-top: 2rem;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .main__article1--text {
@@ -17,4 +18,56 @@
 
 .main__article2--list {
     margin-right: 1.5rem;
+}
+
+.main__article2--img {
+    margin-top: 1.5rem;
+}
+
+.carrousel {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.carrousel_parent-ecrans {
+    display: flex;
+    width: 25%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+   
+    
+}
+.carrousel_ecran {
+    width: 100%;
+    scroll-snap-align: start;
+    flex: none;
+    
+}
+
+.carrousel_ecran figure {
+    margin: 0;
+    scroll-snap-align: start;
+}
+
+.carrousel_ecran figure figcaption {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+ 
+@media (max-width: 430px) {
+
+    .carrousel_parent-ecrans {
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+    }
 }
