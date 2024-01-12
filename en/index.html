@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll: menuIsOpen,}">
+<html lang="en" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +7,12 @@
     <meta name="description" content="Information site about the Oppenheimer film">
     <link rel="stylesheet" href="/src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
-    <title>Oppenheimer - The Books</title>
+    <title>Oppenheimer - Home Page</title>
 </head>
 <body>
     <header class="header">
-        <a href="./index.html">
-            <img src="/public/img/OPPENHEIMER.svg" alt="Site logo" class="header_logo">
+        <a class="header__link-logo" href="/en/index.html">
+            <img src="/public/img/OPPENHEIMER.svg" alt="Site logo" class="header__logo">
         </a>
         <a href="/fr/index.html">
             <p class="header__language">EN</p>
@@ -34,61 +34,48 @@
         </nav>
     </header>
     <main class="main">
-        <section class="main__hero">
-            <h1 class="main__hero--title">The Books</h1>
-            <span class="main__hero--spanup"></span>
-            <h2 class="main__hero--title2">Biographies, fascinating books.</h2>
-            <span class="main__hero--spandown"></span>
-            <p class="main__hero--text">
-                The book "Robert Oppenheimer, the father of the atomic bomb," written by Michel Rival and published in 1995 by Flammarion, is a fascinating and well-documented biography of the American physicist.
+        <section class="main__hero-home">
+            <img src="/public/img/Op1.webp" alt="Photograph of Cylian Murphy as Oppenheimer" class="main__hero--img-home">
+            <h1 class="main__hero--title-home">OPPENHEIMER</h1>
+            <img src="/public/img/arrow.svg" alt="" class="main__hero--arrow-home">
+        </section>
+        <section class="main__info">
+            <h2 class="main__info--title">"Theory at its limits."</h2>
+            <span class="main__info--span"></span>
+            <p class="main__info--text">Explore the various aspects of this quote through five main articles!
             </p>
-            <span class="main__hero--spanmid"></span>
         </section>
-        <section class="main__article">
-            <div class="main__article1">
-                <h3 class="main__article1--title">The Author</h3>
-                <p class="main__article1--text">
-                    The author, who is himself a physicist and historian of science, traces Oppenheimer's intellectual and human journey, relying on various sources such as his writings, speeches, testimonials, or those of his close associates. He analyzes the scientific, political, and ethical issues that marked Oppenheimer's life, placing them in the historical context of the first half of the 20th century. He portrays a complex and fascinating man, who was both a physics genius, a charismatic leader, an enlightened humanist, and a fallen traitor.
-                </p>
-                <img src="/public/img/10-1.webp" alt="" class="main__article1--img">
-                <span class="main__article1--spanmid"></span>
+        <section class="main__cards">
+            <div class="main__cards1">
+                <h4 class="main__cards1--title">THE QUOTE</h4>
+                <p class="main__cards1--text">Analysis of the meaning, context, and scope of this phrase.</p>
+                <img src="/public/img/4.webp" alt="" class="main__cards1--img">
+                <button class="main__cards1--button"><a href="/en/quote.html" class="main__cards1--link">LEARN MORE</a></button>
             </div>
-            <div class="main__article2">
-                <h3 class="main__article2--title">The Book</h3>
-                <p class="main__article2--text">The book "Robert Oppenheimer, the father of the atomic bomb" is associated with the film Oppenheimer, directed by Christopher Nolan in 2023. The film draws heavily from Michel Rival's book, incorporating historical facts and dialogues. The film features actor Cillian Murphy as Oppenheimer, along with other famous actors like Tom Hardy as Leslie Groves, Anne Hathaway as Kitty Oppenheimer, or Michael Caine as Albert Einstein. The film chronicles Oppenheimer's life from childhood to death, focusing on key moments in his scientific career and trial. The film pays tribute to Oppenheimer's work and personality, while illustrating the moral dilemmas and dramatic consequences of his invention.</p>
-                <img src="/public/img/9-1.webp" alt="" class="main__article2--img">
-                <h3 class="main__article2--title">Related</h3>
+            <div class="main__cards1">
+                <h4 class="main__cards1--title">THE FILMS</h4>
+                <p class="main__cards1--text">Synopsis, critique, anecdotes, and excerpts from the Oppenheimer film.</p>
+                <img src="/public/img/6.webp" alt="" class="main__cards1--img">
+                <button class="main__cards1--button"><a href="/en/films.html" class="main__cards1--link">LEARN MORE</a></button>
             </div>
-            <div class="carousel" x-data="{hrefCurrent: 1,}">
-                <div class="carousel_parent-screens" x-ref="parent">
-                    <div id="screen-1" class="carousel_screen">
-                        <figure>
-                            <img src="/public/img/A-1.webp" alt="screen 1 image">
-                            <figcaption>Screen 1</figcaption>
-                        </figure>
-                    </div>
-                    <div id="screen-2" class="carousel_screen">
-                        <figure>
-                            <img src="/public/img/B-1.webp" alt="screen 2 image">
-                            <figcaption>Screen 2</figcaption>
-                        </figure>
-                    </div>
-                    <div id="screen-3" class="carousel_screen">
-                        <figure>
-                            <img src="/public/img/C-1.webp" alt="screen 3 image">
-                            <figcaption>Screen 3</figcaption>
-                        </figure>
-                    </div>
-                </div>
+            <div class="main__cards1">
+                <h4 class="main__cards1--title">THE DIRECTOR</h4>
+                <p class="main__cards1--text">Analysis of the meaning, context, and scope of this phrase.</p>
+                <img src="/public/img/8-1.webp" alt="" class="main__cards1--img">
+                <button class="main__cards1--button"><a href="/en/director.html" class="main__cards1--link">LEARN MORE</a></button>
             </div>
-            <div class="main__redac">
-                <p class="main__redac--text">Written by <span class="main__redac--name">Tony Moretti</span> published today at 07:54 AM</p>
+            <div class="main__cards1">
+                <h4 class="main__cards1--title">THE BOOKS</h4>
+                <p class="main__cards1--text">Presentation of the book "Robert Oppenheimer" by Michel Rival and other related books.</p>
+                <img src="/public/img/9-1.webp" alt="" class="main__cards1--img">
+                <button class="main__cards1--button"><a href="/en/books.html" class="main__cards1--link">LEARN MORE</a></button>
             </div>
-        </section>
-        <section class="main__coming">
-            <p class="main__coming--text">Coming soon:</p>
-            <h2 class="main__coming--title">THE MUSIC</h2>
-            <button class="main__coming--button"><a href="/en/music.html" class="main__coming--link">READ THE NEXT ARTICLE</a></button>
+            <div class="main__cards1">
+                <h4 class="main__cards1--title">THE MUSIC</h4>
+                <p class="main__cards1--text">Presentation of the music "Can You Hear The Music" by Ludwig Göransson.</p>
+                <img src="/public/img/4k-Cilyan-2.webp" alt="" class="main__cards1--img">
+                <button class="main__cards1--button"><a href="/en/music.html" class="main__cards1--link">LEARN MORE</a></button>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -102,7 +89,7 @@
         <div class="footer__pages">
             <ul class="footer__pages--list">
                 <li class="footer__pages--obj"><a href="/en/about.html" class="footer__pages--lien">About</a></li>
-                <li class="footer__pages--obj"><a href="/en/projects.html" class="footer__pages--lien">Other projects</a></li>
+                <li class="footer__pages--obj"><a href="/en/projects.html" class="footer__pages--lien">Other Projects</a></li>
                 <li class="footer__pages--obj"><a href="/en/contact.html" class="footer__pages--lien">Contact</a></li>
                 <li class="footer__pages--obj"><a href="/en/glossary.html" class="footer__pages--lien">Glossary</a></li>
             </ul>

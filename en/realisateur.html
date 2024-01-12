@@ -1,85 +1,85 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+<html lang="en" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site d'informations sur le film Oppenheimer">
+    <meta name="description" content="Information site about the Oppenheimer film">
     <link rel="stylesheet" href="/src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
-    <title>Oppenheimer - Le Réalisateur</title>
+    <title>Oppenheimer - The Director</title>
 </head>
 <body>
     <header class="header">
-        <a href="./index.html">
-            <img src="/public/img/OPPENHEIMER.svg" alt="Logo du site" class="header_logo">
+        <a href="/en/index.html">
+            <img src="/public/img/OPPENHEIMER.svg" alt="Site logo" class="header_logo">
         </a>
-        <a href="./index.html">
-            <p class="header__language">FR</p>
+        <a href="/fr/realisateur.html">
+            <p class="header__language">EN</p>
         </a>
         <button class="header__menu" aria-controls="mainNav" @click="menuIsOpen = true" x-bind:class="{ 'header__menu--hidden': menuIsOpen }">
-            <img class="header__menu-btn" src="/public/img/menu-open.svg" alt="Boutton du menu">
+            <img class="header__menu-btn" src="/public/img/menu-open.svg" alt="Menu button">
         </button>
-        <nav id="mainNav" x-show = "menuIsOpen" x-transition.duration.750ms class="menu">
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.750ms class="menu">
             <button class="menu__button" aria-controls="mainNav" @click="menuIsOpen = false">
-                <img class="menu__button-btn" src="/public/img/menu-closed.svg" alt="Croix pour fermer le menu">
+                <img class="menu__button-btn" src="/public/img/menu-closed.svg" alt="Cross to close the menu">
             </button>
             <ul class="menu__pages">
-                <li class="menu__obj"><a href="/fr/quote.html" class="menu__obj-lien">LA RÉPLIQUE</a></li>
-                <li class="menu__obj"><a href="/fr/films.html" class="menu__obj-lien">LES FILMS</a></li>
-                <li class="menu__obj"><a href="/fr/realisateur.html" class="menu__obj-lien">LE RÉALISATEUR</a></li>
-                <li class="menu__obj"><a href="/fr/books.html" class="menu__obj-lien">LES LIVRES</a></li>
-                <li class="menu__obj"><a href="/fr/music.html" class="menu__obj-lien">LA MUSIQUE</a></li>
+                <li class="menu__obj"><a href="/en/quote.html" class="menu__obj-lien">THE QUOTE</a></li>
+                <li class="menu__obj"><a href="/en/films.html" class="menu__obj-lien">THE FILMS</a></li>
+                <li class="menu__obj"><a href="/en/realisateur.html" class="menu__obj-lien">THE DIRECTOR</a></li>
+                <li class="menu__obj"><a href="/en/books.html" class="menu__obj-lien">THE BOOKS</a></li>
+                <li class="menu__obj"><a href="/en/music.html" class="menu__obj-lien">THE MUSIC</a></li>
             </ul>
         </nav>
     </header>
     <main class="main">
         <section class="main__hero">
-            <h1 class="main__hero--title">Le Réalisateur</h1>
+            <h1 class="main__hero--title">The Director</h1>
             <span class="main__hero--spanup"></span>
-            <h2 class="main__hero--title2">Christopher Nolan, le maître du cinéma moderne.</h2>
+            <h2 class="main__hero--title2">Christopher Nolan, master of modern cinema.</h2>
             <span class="main__hero--spandown"></span>
             <p class="main__hero--text">
-                Christopher Nolan, réalisateur d'Oppenheimer en 2023, est acclamé pour sa maîtrise du cinéma, mêlant science-fiction, thriller et drame. Son oeuvre explore des concepts complexes tels que le temps, la mémoire, le rêve et la réalité. Sa signature visuelle, l'utilisation astucieuse des effets spéciaux et sa collaboration avec des acteurs de renom sont des traits distinctifs.
+                Christopher Nolan, director of Oppenheimer in 2023, is acclaimed for his mastery of cinema, blending science fiction, thriller, and drama. His work explores complex concepts such as time, memory, dream, and reality. His visual signature, clever use of special effects, and collaboration with renowned actors are distinctive features.
             </p>
             <span class="main__hero--spanmid"></span>
         </section>
         <section class="main__article">
             <div class="main__article1">
-                <h3 class="main__article1--title">Biographie</h3>
+                <h3 class="main__article1--title">Biography</h3>
                 <p class="main__article1--text">
-                    Christopher Nolan, né le 30 juillet 1970 à Londres, a grandi entre Londres et Chicago, où son père était consultant en publicité. Passionné de cinéma dès son jeune âge, il a réalisé des courts-métrages avec la caméra Super 8 de son père. Il a étudié la littérature anglaise à l'université de Londres, où il a fondé un club de cinéma et créé son premier long-métrage, Following, en 1998.
+                    Christopher Nolan, born on July 30, 1970, in London, grew up between London and Chicago, where his father worked as an advertising consultant. Passionate about cinema from a young age, he made short films with his father's Super 8 camera. He studied English literature at the University of London, where he founded a film club and created his first feature film, Following, in 1998.
                 </p>
                 <img src="/public/img/10.webp" alt="" class="main__article1--img">
                 <p class="main__article1--text">
-                    Il a gagné en renommée avec Memento en 2000, un film au récit novateur alternant entre des scènes en noir et blanc chronologiques et des scènes en couleurs inversées. En 2002, il a réalisé Insomnia, un remake norvégien, suivie de la trilogie Batman : Batman Begins (2005), The Dark Knight (2008), et The Dark Knight Rises (2012).
+                    He gained fame with Memento in 2000, an innovative film with a narrative alternating between chronological black and white scenes and reversed color scenes. In 2002, he directed Insomnia, a Norwegian remake, followed by the Batman trilogy: Batman Begins (2005), The Dark Knight (2008), and The Dark Knight Rises (2012).
                 </p>
-                <p class="main__article1--text">Nolan a également réalisé des films ambitieux et originaux, tels que The Prestige (2006), qui explore la rivalité entre deux magiciens du XIXe siècle ; Inception (2010), où une équipe d'espions pénètre les rêves d'une cible pour implanter une idée ; Interstellar (2014), suivant une équipe d'astronautes à la recherche d'une planète habitable ; Dunkerque (2017), relatant l'évacuation des soldats alliés encerclés par les nazis pendant la Seconde Guerre mondiale ; Tenet (2020), avec un agent secret manipulant le temps ; et enfin, Oppenheimer (2023), retraçant l'histoire de Robert Oppenheimer, père de la bombe atomique.</p>
+                <p class="main__article1--text">Nolan has also directed ambitious and original films, such as The Prestige (2006), exploring the rivalry between two 19th-century magicians; Inception (2010), where a team of spies enters a target's dreams to implant an idea; Interstellar (2014), following a team of astronauts in search of a habitable planet; Dunkirk (2017), recounting the evacuation of Allied soldiers surrounded by the Nazis during World War II; Tenet (2020), with a secret agent manipulating time; and finally, Oppenheimer (2023), tracing the story of Robert Oppenheimer, the father of the atomic bomb.</p>
                 <span class="main__article1--spanmid"></span>
             </div>
             <div class="main__article2">
                 <img src="/public/img/2.webp" alt="" class="main__article2--img">
-                <h3 class="main__article2--title">Style et influences</h3>
-                <p class="main__article2--text">Christopher Nolan est reconnu pour son style unique et innovant, qui se caractérise par plusieurs éléments :</p>
+                <h3 class="main__article2--title">Style and Influences</h3>
+                <p class="main__article2--text">Christopher Nolan is recognized for his unique and innovative style, characterized by several elements:</p>
                 <ul class="main__article2--list">
-                    <li class="main__article2--obj">L’utilisation de concepts scientifiques ou philosophiques complexes, comme la physique quantique, la théorie de la relativité, la mécanique du rêve ou le paradoxe temporel.</li>
-                    <li class="main__article2--obj">L’utilisation de structures narratives non linéaires ou fragmentées, qui jouent avec la chronologie, les points de vue ou les niveaux de réalité.</li>
-                    <li class="main__article2--obj">L’utilisation de scènes spectaculaires ou surprenantes, qui créent du suspense, du mystère ou du vertige.</li>
-                    <li class="main__article2--obj">L’utilisation d’effets spéciaux réalistes ou pratiques, qui privilégient les décors naturels, les maquettes ou les cascades réelles plutôt que les images de synthèse.</li>
-                    <li class="main__article2--obj">L’utilisation d’une musique originale ou emblématique, composée par Hans Zimmer ou Ludwig Goransson, qui renforce l’atmosphère ou le rythme des films.</li>
-                    <li class="main__article2--obj">La collaboration avec des acteurs talentueux ou charismatiques, comme Christian Bale, Leonardo DiCaprio, Tom Hardy, Anne Hathaway, Cillian Murphy, Marion Cotillard, Michael Caine ou Morgan Freeman.</li>
+                    <li class="main__article2--obj">The use of complex scientific or philosophical concepts, such as quantum physics, the theory of relativity, dream mechanics, or temporal paradox.</li>
+                    <li class="main__article2--obj">The use of non-linear or fragmented narrative structures, playing with chronology, points of view, or levels of reality.</li>
+                    <li class="main__article2--obj">The use of spectacular or surprising scenes, creating suspense, mystery, or vertigo.</li>
+                    <li class="main__article2--obj">The use of realistic or practical special effects, favoring natural settings, models, or real stunts over computer-generated images.</li>
+                    <li class="main__article2--obj">The use of original or iconic music, composed by Hans Zimmer or Ludwig Goransson, enhancing the atmosphere or rhythm of the films.</li>
+                    <li class="main__article2--obj">Collaboration with talented or charismatic actors, such as Christian Bale, Leonardo DiCaprio, Tom Hardy, Anne Hathaway, Cillian Murphy, Marion Cotillard, Michael Caine, or Morgan Freeman.</li>
                 </ul>
-                <p class="main__article2--text">Christopher Nolan est également influencé par de nombreux cinéastes qui l’ont inspiré, comme Stanley Kubrick, Alfred Hitchcock, Ridley Scott, Steven Spielberg ou James Cameron.</p>
-                <p class="main__article2--text">Christopher Nolan est donc le maître du cinéma moderne, qui nous offre des films qui nous font rêver, réfléchir et vibrer. C’est un cinéaste qui a ses limites.</p>
+                <p class="main__article2--text">Christopher Nolan is also influenced by many filmmakers who have inspired him, such as Stanley Kubrick, Alfred Hitchcock, Ridley Scott, Steven Spielberg, or James Cameron.</p>
+                <p class="main__article2--text">Christopher Nolan is, therefore, the master of modern cinema, offering us films that make us dream, reflect, and resonate. He is a filmmaker who has his limits.</p>
             </div>
             <div class="main__redac">
-                <p class="main__redac--text">Rédigé par <span class="main__redac--name">Tony Moretti</span> publié aujourd’hui à 07h54</p>
+                <p class="main__redac--text">Written by <span class="main__redac--name">Tony Moretti</span> published today at 07:54 AM</p>
             </div>
         </section>
         <section class="main__coming">
-            <p class="main__coming--text">à venir :</p>
-            <h2 class="main__coming--title">LES LIVRES</h2>
-            <button class="main__coming--button"><a href="/fr/books.html" class="main__coming--link">LIRE L’ARTICLE SUIVANT</a></button>
+            <p class="main__coming--text">Upcoming:</p>
+            <h2 class="main__coming--title">THE BOOKS</h2>
+            <button class="main__coming--button"><a href="/en/books.html" class="main__coming--link">READ THE NEXT ARTICLE</a></button>
         </section>
     </main>
     <footer class="footer">
@@ -87,35 +87,35 @@
             <span class="footer__title--down"></span>
             <h3 class="footer__title--text">OPPENHEIMER</h3>
             <span class="footer__title--left"></span>
-            <img src="/public/img/dot.svg" alt="Point de séparation" class="footer__title--dot">
+            <img src="/public/img/dot.svg" alt="Separation point" class="footer__title--dot">
             <span class="footer__title--right"></span>
         </div>
         <div class="footer__pages">
             <ul class="footer__pages--list">
-                <li class="footer__pages--obj"><a href="/fr/about.html" class="footer__pages--lien">A propos</a></li>
-                <li class="footer__pages--obj"><a href="/fr/projects.html" class="footer__pages--lien">Autres projets</a></li>
-                <li class="footer__pages--obj"><a href="/fr/contact.html" class="footer__pages--lien">Contact</a></li>
-                <li class="footer__pages--obj"><a href="/fr/glossary.html" class="footer__pages--lien">Glossaire</a></li>
+                <li class="footer__pages--obj"><a href="/en/about.html" class="footer__pages--lien">About</a></li>
+                <li class="footer__pages--obj"><a href="/en/projects.html" class="footer__pages--lien">Other Projects</a></li>
+                <li class="footer__pages--obj"><a href="/en/contact.html" class="footer__pages--lien">Contact</a></li>
+                <li class="footer__pages--obj"><a href="/en/glossary.html" class="footer__pages--lien">Glossary</a></li>
             </ul>
         </div>
         <div class="footer__mentions">
             <span class="footer__mentions--left"></span>
-            <img src="/public/img/dot.svg" alt="Point de séparation" class="footer__mentions--dot">
+            <img src="/public/img/dot.svg" alt="Separation point" class="footer__mentions--dot">
             <span class="footer__mentions--right"></span>
-            <p class="footer__mentions--text">Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="" class="footer__mentions--lien">MMI de Montbéliard</a></p>
+            <p class="footer__mentions--text">Project carried out as part of an educational exercise at the <a href="" class="footer__mentions--lien">MMI department of Montbéliard</a></p>
             <span class="footer__mentions--left"></span>
-            <img src="/public/img/dot.svg" alt="Point de séparation" class="footer__mentions--dot">
+            <img src="/public/img/dot.svg" alt="Separation point" class="footer__mentions--dot">
             <span class="footer__mentions--right"></span>
-            <p class="footer__mentions--text">© 2023 Oppenheimer - Tous droits réservés - Développé avec ❤️ par Tony MORETTI</p>
+            <p class="footer__mentions--text">© 2023 Oppenheimer - All rights reserved - Developed with ❤️ by Tony MORETTI</p>
             <span class="footer__mentions--left"></span>
-            <img src="/public/img/dot.svg" alt="Point de séparation" class="footer__mentions--dot">
+            <img src="/public/img/dot.svg" alt="Separation point" class="footer__mentions--dot">
             <span class="footer__mentions--right"></span>
         </div>
         <div class="footer__social">
-            <h4 class="footer__social--title">Nous suivre</h4>
-            <a href="https://www.instagram.com/"><img src="/public/img/instagram.svg" alt="Logo d'Instagram" class="footer__social--img"></a>
-            <a href="https://www.facebook.com/"><img src="/public/img/facebook.svg" alt="Logo de Facebook" class="footer__social--img"></a>
-            <a href="https://twitter.com/"><img src="/public/img/twitter.svg" alt="Logo de Twitter" class="footer__social--img"></a>
+            <h4 class="footer__social--title">Follow Us</h4>
+            <a href="https://www.instagram.com/"><img src="/public/img/instagram.svg" alt="Instagram logo" class="footer__social--img"></a>
+            <a href="https://www.facebook.com/"><img src="/public/img/facebook.svg" alt="Facebook logo" class="footer__social--img"></a>
+            <a href="https://twitter.com/"><img src="/public/img/twitter.svg" alt="Twitter logo" class="footer__social--img"></a>
         </div>
     </footer>
 </body>

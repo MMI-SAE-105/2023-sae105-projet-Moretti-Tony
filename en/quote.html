@@ -1,81 +1,81 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+<html lang="en" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site d'informations sur le film Oppenheimer">
+    <meta name="description" content="Information site about the Oppenheimer film">
     <link rel="stylesheet" href="/src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
-    <title>Oppenheimer - La Réplique</title>
+    <title>Oppenheimer - The Quote</title>
 </head>
 <body>
     <header class="header">
-        <a href="./index.html">
-            <img src="/public/img/OPPENHEIMER.svg" alt="Logo du site" class="header_logo">
+        <a href="/en/index.html">
+            <img src="/public/img/OPPENHEIMER.svg" alt="Site logo" class="header_logo">
         </a>
-        <a href="./index.html">
-            <p class="header__language">FR</p>
+        <a href="/fr/quote.html">
+            <p class="header__language">EN</p>
         </a>
         <button class="header__menu" aria-controls="mainNav" @click="menuIsOpen = true" x-bind:class="{ 'header__menu--hidden': menuIsOpen }">
-            <img class="header__menu-btn" src="/public/img/menu-open.svg" alt="Boutton du menu">
+            <img class="header__menu-btn" src="/public/img/menu-open.svg" alt="Menu button">
         </button>
-        <nav id="mainNav" x-show = "menuIsOpen" x-transition.duration.750ms class="menu">
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.750ms class="menu">
             <button class="menu__button" aria-controls="mainNav" @click="menuIsOpen = false">
-                <img class="menu__button-btn" src="/public/img/menu-closed.svg" alt="Croix pour fermer le menu">
+                <img class="menu__button-btn" src="/public/img/menu-closed.svg" alt="Cross to close the menu">
             </button>
             <ul class="menu__pages">
-                <li class="menu__obj"><a href="/fr/quote.html" class="menu__obj-lien">LA RÉPLIQUE</a></li>
-                <li class="menu__obj"><a href="/fr/films.html" class="menu__obj-lien">LES FILMS</a></li>
-                <li class="menu__obj"><a href="/fr/realisateur.html" class="menu__obj-lien">LE RÉALISATEUR</a></li>
-                <li class="menu__obj"><a href="/fr/books.html" class="menu__obj-lien">LES LIVRES</a></li>
-                <li class="menu__obj"><a href="/fr/music.html" class="menu__obj-lien">LA MUSIQUE</a></li>
+                <li class="menu__obj"><a href="/en/quote.html" class="menu__obj-lien">THE QUOTE</a></li>
+                <li class="menu__obj"><a href="/en/films.html" class="menu__obj-lien">THE FILMS</a></li>
+                <li class="menu__obj"><a href="/en/realisateur.html" class="menu__obj-lien">THE DIRECTOR</a></li>
+                <li class="menu__obj"><a href="/en/books.html" class="menu__obj-lien">THE BOOKS</a></li>
+                <li class="menu__obj"><a href="/en/music.html" class="menu__obj-lien">THE MUSIC</a></li>
             </ul>
         </nav>
     </header>
     <main class="main">
         <section class="main__hero">
-            <h1 class="main__hero--title">La Réplique</h1>
+            <h1 class="main__hero--title">The Quote</h1>
             <span class="main__hero--spanup"></span>
-            <h2 class="main__hero--title2">“La théorie à ses limites.”</h2>
+            <h2 class="main__hero--title2">"Theory at its limits."</h2>
             <span class="main__hero--spandown"></span>
             <p class="main__hero--text">
-                Cette phrase est prononcée par Robert Oppenheimer, le personnage principal du film Oppenheimer, réalisé par Christopher Nolan en 2023. Elle apparaît à la fin du film, après que la première bombe atomique a été testée avec succès dans le désert du Nouveau-Mexique, le 16 juillet 1945.
+                This phrase is spoken by Robert Oppenheimer, the main character of the Oppenheimer film, directed by Christopher Nolan in 2023. It appears at the end of the film, after the first atomic bomb was successfully tested in the New Mexico desert on July 16, 1945.
             </p>
             <span class="main__hero--spanmid"></span>
         </section>
         <section class="main__article">
             <div class="main__article1">
-                <h3 class="main__article1--title">Le contexte historique et scientifique</h3>
+                <h3 class="main__article1--title">Historical and Scientific Context</h3>
                 <p class="main__article1--text">
-                    Robert Oppenheimer est né le 22 avril 1904 à New York. Il est issu d’une famille juive aisée et cultivée. Il se passionne très tôt pour la physique et les mathématiques. Il étudie à Harvard, puis à Cambridge et à Göttingen, où il obtient son doctorat en 1927. Il devient ensuite professeur de physique théorique à l’université de Californie à Berkeley et au California Institute of Technology.
+                    Robert Oppenheimer was born on April 22, 1904, in New York. He came from a wealthy and educated Jewish family. He developed a passion for physics and mathematics at an early age, studying at Harvard, then at Cambridge and Göttingen, where he earned his doctorate in 1927. He later became a professor of theoretical physics at the University of California, Berkeley, and the California Institute of Technology.
                 </p>
                 <img src="/public/img/12-1.webp" alt="" class="main__article1--img">
                 <p class="main__article1--text">
-                    En 1939, l'Allemagne nazie envahit la Pologne, déclenchant la Seconde Guerre mondiale. La même année, les physiciens allemands Otto Hahn et Fritz Strassmann découvrent la fission nucléaire, permettant de libérer une grande quantité d'énergie en brisant le noyau d'atomes lourds comme l'uranium ou le plutonium. Cette avancée suscite des craintes concernant le développement d'une arme nucléaire allemande avant les Alliés.
-                    En 1941, le président américain Franklin D. Roosevelt lance le projet Manhattan, un programme secret visant à construire la première bombe atomique. J. Robert Oppenheimer est choisi pour diriger le laboratoire de Los Alamos, au Nouveau-Mexique, où des centaines de scientifiques du monde entier travaillent. Parmi eux, Hans Bethe, un physicien allemand ayant fui le nazisme, prend en charge le département de physique théorique.
+                    In 1939, Nazi Germany invaded Poland, triggering World War II. That same year, German physicists Otto Hahn and Fritz Strassmann discovered nuclear fission, the process of releasing a large amount of energy by breaking the nuclei of heavy atoms such as uranium or plutonium. This discovery raised concerns about the development of a German nuclear weapon before the Allies.
+                    In 1941, U.S. President Franklin D. Roosevelt initiated the Manhattan Project, a secret program aimed at building the first atomic bomb. J. Robert Oppenheimer was chosen to lead the Los Alamos laboratory in New Mexico, where hundreds of scientists from around the world worked. Among them, Hans Bethe, a German physicist who had fled the Nazis, took charge of the theoretical physics department.
                 </p>
-                <p class="main__article1--text">Le film Oppenheimer se concentre sur la conception et le test de la première bombe A, nommée Trinity. Le test a lieu le 16 juillet 1945, à 5h29 du matin, dans le désert du Nouveau-Mexique, à environ 200 km au sud de Los Alamos.</p>
-                <p class="main__article1--text">C’est à ce moment-là qu’Oppenheimer prononce la réplique “La théorie à ses limites.”</p>
+                <p class="main__article1--text">The Oppenheimer film focuses on the design and testing of the first A-bomb, named Trinity. The test took place on July 16, 1945, at 5:29 a.m., in the New Mexico desert, about 200 km south of Los Alamos.</p>
+                <p class="main__article1--text">It is at this moment that Oppenheimer utters the quote "Theory at its limits."</p>
                 <span class="main__article1--spanmid"></span>
             </div>
             <div class="main__article2">
                 <img src="/public/img/2.webp" alt="" class="main__article2--img">
-                <h3 class="main__article2--title">Le sens et la portée de la réplique</h3>
+                <h3 class="main__article2--title">Meaning and Scope of the Quote</h3>
                 <ul class="main__article2--list">
-                    <li class="main__article2--obj">Du point de vue scientifique, la réplique peut exprimer la satisfaction d’avoir réussi à mettre en pratique la théorie de la fission nucléaire, qui était jusque-là une hypothèse purement mathématique. Oppenheimer et ses collègues ont réussi à maîtriser une force colossale, qui ouvre des perspectives nouvelles pour la science et la technologie. Ils ont démontré que la théorie n’est pas seulement un ensemble d’équations abstraites, mais qu’elle a des conséquences concrètes et mesurables dans le monde réel. Ils ont repoussé les limites de la connaissance humaine.</li>
-                    <li class="main__article2--obj">Du point de vue philosophique, la réplique peut exprimer le doute et le questionnement face à la signification et à la valeur de la théorie scientifique. Oppenheimer et ses collègues ont créé une arme terrifiante, capable de détruire des villes entières et de tuer des millions de personnes. Ils ont utilisé la théorie comme un moyen, sans se soucier de la fin. Ils ont ignoré les implications morales et politiques de leur invention. Ils ont confondu la vérité avec la puissance. Ils ont atteint les limites de la raison humaine.</li>
-                    <li class="main__article2--obj">Du point de vue personnel, la réplique peut exprimer le regret et le remords face aux conséquences de ses actes.</li>
+                    <li class="main__article2--obj">From a scientific standpoint, the quote can express the satisfaction of successfully putting into practice the theory of nuclear fission, which was previously purely a mathematical hypothesis. Oppenheimer and his colleagues succeeded in harnessing colossal power, opening new perspectives for science and technology. They demonstrated that theory is not just a set of abstract equations but has concrete and measurable consequences in the real world. They pushed the limits of human knowledge.</li>
+                    <li class="main__article2--obj">From a philosophical standpoint, the quote can express doubt and questioning regarding the meaning and value of scientific theory. Oppenheimer and his colleagues created a terrifying weapon, capable of destroying entire cities and killing millions of people. They used theory as a means without considering the end. They ignored the moral and political implications of their invention. They confused truth with power. They reached the limits of human reason.</li>
+                    <li class="main__article2--obj">From a personal standpoint, the quote can express regret and remorse for the consequences of one's actions.</li>
                 </ul>
             </div>
             <div class="main__redac">
-                <p class="main__redac--text">Rédigé par <span class="main__redac--name">Tony Moretti</span> publié aujourd’hui à 07h54</p>
+                <p class="main__redac--text">Written by <span class="main__redac--name">Tony Moretti</span> published today at 07:54 AM</p>
             </div>
         </section>
         <section class="main__coming">
-            <p class="main__coming--text">à venir :</p>
-            <h2 class="main__coming--title">LES FILMS</h2>
-            <button class="main__coming--button"><a href="/fr/films.html" class="main__coming--link">LIRE L’ARTICLE SUIVANT</a></button>
+            <p class="main__coming--text">Upcoming:</p>
+            <h2 class="main__coming--title">THE FILMS</h2>
+            <button class="main__coming--button"><a href="/en/films.html" class="main__coming--link">READ THE NEXT ARTICLE</a></button>
         </section>
     </main>
     <footer class="footer">
@@ -83,35 +83,35 @@
             <span class="footer__title--down"></span>
             <h3 class="footer__title--text">OPPENHEIMER</h3>
             <span class="footer__title--left"></span>
-            <img src="/public/img/dot.svg" alt="Point de séparation" class="footer__title--dot">
+            <img src="/public/img/dot.svg" alt="Separation point" class="footer__title--dot">
             <span class="footer__title--right"></span>
         </div>
         <div class="footer__pages">
             <ul class="footer__pages--list">
-                <li class="footer__pages--obj"><a href="/fr/about.html" class="footer__pages--lien">A propos</a></li>
-                <li class="footer__pages--obj"><a href="/fr/projects.html" class="footer__pages--lien">Autres projets</a></li>
-                <li class="footer__pages--obj"><a href="/fr/contact.html" class="footer__pages--lien">Contact</a></li>
-                <li class="footer__pages--obj"><a href="/fr/glossary.html" class="footer__pages--lien">Glossaire</a></li>
+                <li class="footer__pages--obj"><a href="/en/about.html" class="footer__pages--lien">About</a></li>
+                <li class="footer__pages--obj"><a href="/en/projects.html" class="footer__pages--lien">Other Projects</a></li>
+                <li class="footer__pages--obj"><a href="/en/contact.html" class="footer__pages--lien">Contact</a></li>
+                <li class="footer__pages--obj"><a href="/en/glossary.html" class="footer__pages--lien">Glossary</a></li>
             </ul>
         </div>
         <div class="footer__mentions">
             <span class="footer__mentions--left"></span>
-            <img src="/public/img/dot.svg" alt="Point de séparation" class="footer__mentions--dot">
+            <img src="/public/img/dot.svg" alt="Separation point" class="footer__mentions--dot">
             <span class="footer__mentions--right"></span>
-            <p class="footer__mentions--text">Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="" class="footer__mentions--lien">MMI de Montbéliard</a></p>
+            <p class="footer__mentions--text">Project carried out as part of an educational exercise at the <a href="" class="footer__mentions--lien">MMI department of Montbéliard</a></p>
             <span class="footer__mentions--left"></span>
-            <img src="/public/img/dot.svg" alt="Point de séparation" class="footer__mentions--dot">
+            <img src="/public/img/dot.svg" alt="Separation point" class="footer__mentions--dot">
             <span class="footer__mentions--right"></span>
-            <p class="footer__mentions--text">© 2023 Oppenheimer - Tous droits réservés - Développé avec ❤️ par Tony MORETTI</p>
+            <p class="footer__mentions--text">© 2023 Oppenheimer - All rights reserved - Developed with ❤️ by Tony MORETTI</p>
             <span class="footer__mentions--left"></span>
-            <img src="/public/img/dot.svg" alt="Point de séparation" class="footer__mentions--dot">
+            <img src="/public/img/dot.svg" alt="Separation point" class="footer__mentions--dot">
             <span class="footer__mentions--right"></span>
         </div>
         <div class="footer__social">
-            <h4 class="footer__social--title">Nous suivre</h4>
-            <a href="https://www.instagram.com/"><img src="/public/img/instagram.svg" alt="Logo d'Instagram" class="footer__social--img"></a>
-            <a href="https://www.facebook.com/"><img src="/public/img/facebook.svg" alt="Logo de Facebook" class="footer__social--img"></a>
-            <a href="https://twitter.com/"><img src="/public/img/twitter.svg" alt="Logo de Twitter" class="footer__social--img"></a>
+            <h4 class="footer__social--title">Follow Us</h4>
+            <a href="https://www.instagram.com/"><img src="/public/img/instagram.svg" alt="Instagram logo" class="footer__social--img"></a>
+            <a href="https://www.facebook.com/"><img src="/public/img/facebook.svg" alt="Facebook logo" class="footer__social--img"></a>
+            <a href="https://twitter.com/"><img src="/public/img/twitter.svg" alt="Twitter logo" class="footer__social--img"></a>
         </div>
     </footer>
 </body>
