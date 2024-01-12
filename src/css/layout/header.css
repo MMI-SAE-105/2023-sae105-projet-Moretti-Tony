@@ -15,6 +15,8 @@
     position: fixed;
     top: 0;
     padding: 1rem;
+    background-color: var(--white);
+    z-index: 1;
 }
 
 .header__logo {
@@ -39,7 +41,7 @@
     width: 100vw;
     height: 100vh;
     background-color: var(--black);
-    z-index: 100;
+    z-index: 1;
 }
 
 .menu__button {
@@ -73,14 +75,11 @@
 
 }
 
-.menu__pages--link {
+.menu__obj-lien {
     margin-bottom: 30px;
     font-family: var(--font-family-1);
-    font-weight: 700;
+    font-weight: 900;
     font-size: 30px;
-    letter-spacing: var();
-    line-height: ;
-    font-style: var();
     text-transform: uppercase;
     color: var(--white);
 }

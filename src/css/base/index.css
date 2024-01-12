@@ -1,3 +1,12 @@
+.main__info--span {
+    width: 40%;
+    background-color: var(--black); 
+    height:1px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+}
+
 .main__cards {
     color: var(--black);
     display: flex;
