@@ -1,0 +1,31 @@
+.main__projects--div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.main__projects--span {
+    display:block;
+    height:1px;
+    background-color:black; 
+    width :40%;
+    margin:auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.main__projects--name {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+.main__projects--link {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--black);
+    font-style: italic;
+}

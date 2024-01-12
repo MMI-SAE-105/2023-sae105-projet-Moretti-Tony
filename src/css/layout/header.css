@@ -99,8 +99,9 @@
 
 .header__language {
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin: 0 1rem;
+    margin-left: 5rem;
 }
 
 .header__menu {

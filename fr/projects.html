@@ -1,11 +1,127 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Site d'informations sur le film Oppenheimer">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>Oppenheimer - Les Projets</title>
 </head>
 <body>
-    
+    <header class="header">
+        <a class="header__link-logo" href="/fr/index.html">
+            <img src="/public/img/OPPENHEIMER.svg" alt="Logo du site" class="header__logo">
+        </a>
+        <a href="/en/quote.html">
+            <p class="header__language">FR</p>
+        </a>
+        <button class="header__menu" aria-controls="mainNav" @click="menuIsOpen = true" x-bind:class="{ 'header__menu--hidden': menuIsOpen }">
+            <img class="header__menu-btn" src="/public/img/menu-open.svg" alt="Boutton du menu">
+        </button>
+        <nav id="mainNav" x-show = "menuIsOpen" x-transition.duration.750ms class="menu">
+            <button class="menu__button" aria-controls="mainNav" @click="menuIsOpen = false">
+                <img class="menu__button-btn" src="/public/img/menu-closed.svg" alt="Croix pour fermer le menu">
+            </button>
+            <ul class="menu__pages">
+                <li class="menu__obj"><a href="/fr/quote.html" class="menu__obj-lien">LA RÉPLIQUE</a></li>
+                <li class="menu__obj"><a href="/fr/films.html" class="menu__obj-lien">LES FILMS</a></li>
+                <li class="menu__obj"><a href="/fr/realisateur.html" class="menu__obj-lien">LE RÉALISATEUR</a></li>
+                <li class="menu__obj"><a href="/fr/books.html" class="menu__obj-lien">LES LIVRES</a></li>
+                <li class="menu__obj"><a href="/fr/music.html" class="menu__obj-lien">LA MUSIQUE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="main__hero">
+            <h1 class="main__hero--title">Les Autres Projet</h1>
+            <span class="main__hero--spanup"></span>
+            <h2 class="main__hero--title2">Envie de découvrir les autres projets des étudiants ?</h2>
+            <span class="main__hero--spandown"></span>
+        </section>
+        <section class="main__projects">
+            <div class="main__projects--div">
+                <p class="main__projects--name">Pierre GACHOD</p>
+                <a href="https://lepianiste.pierre-gachod.fr/" class="main__projects--link">LE PIANISTE</a>
+                <span class="main__projects--span"></span>
+            </div>
+            <div class="main__projects--div">
+                <p class="main__projects--name">Mathis LIEGEON</p>
+                <a href="https://soserious.logan-martinez.fr/" class="main__projects--link">SKYFALL</a>
+                <span class="main__projects--span"></span>
+            </div>
+            <div class="main__projects--div">
+                <p class="main__projects--name">Tasnim KEBAILI</p>
+                <a href="https://hakuna-matata.kebaili-tasnim.fr/" class="main__projects--link">HAKUNA MATATA</a>
+                <span class="main__projects--span"></span>
+            </div>
+            <div class="main__projects--div">
+                <p class="main__projects--name">Liloue GUYOT</p>
+                <a href="https://sae105-projet.lguyot.fr/" class="main__projects--link">LE LABYRINTHE</a>
+                <span class="main__projects--span"></span>
+            </div>
+            <div class="main__projects--div">
+                <p class="main__projects--name">Angelo BOSETTI</p>
+                <a href="https://the-long-line.angelo-bosetti.fr/" class="main__projects--link">THE LONG LINE</a>
+                <span class="main__projects--span"></span>
+            </div>
+            <div class="main__projects--div">
+                <p class="main__projects--name">Imrane QUERCHI</p>
+                <a href="https://uncloudedbyhate.imrane-qerchi.fr/" class="main__projects--link">UNCLOUDED BY HATE</a>
+                <span class="main__projects--span"></span>
+            </div>
+            <div class="main__projects--div">
+                <p class="main__projects--name">Oliventhan THAMILSELVAN</p>
+                <a href="https://impossible-to-be-her.thamilselvan.fr/" class="main__projects--link">BARBIE</a>
+                <span class="main__projects--span"></span>
+            </div>
+            <div class="main__projects--div">
+                <p class="main__projects--name">Jérémy ROY</p>
+                <a href="https://mordors-direction.j-roy.fr/fr/" class="main__projects--link">MORDORS DIRECTION</a>
+                <span class="main__projects--span"></span>
+            </div>
+            <div class="main__projects--div">
+                <p class="main__projects--name">Rayane DAMAGE</p>
+                <a href="https://across-the-spider-web.rdamage.fr/" class="main__projects--link">ACROSS THE SPIDER WEB</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__title">
+            <span class="footer__title--down"></span>
+            <h3 class="footer__title--text">OPPENHEIMER</h3>
+            <span class="footer__title--left"></span>
+            <img src="/public/img/dot.svg" alt="Point de séparation" class="footer__title--dot">
+            <span class="footer__title--right"></span>
+        </div>
+        <div class="footer__pages">
+            <ul class="footer__pages--list">
+                <li class="footer__pages--obj"><a href="/fr/about.html" class="footer__pages--lien">A propos</a></li>
+                <li class="footer__pages--obj"><a href="/fr/projects.html" class="footer__pages--lien">Autres projets</a></li>
+                <li class="footer__pages--obj"><a href="/fr/contact.html" class="footer__pages--lien">Contact</a></li>
+                <li class="footer__pages--obj"><a href="/fr/glossary.html" class="footer__pages--lien">Glossaire</a></li>
+            </ul>
+        </div>
+        <div class="footer__mentions">
+            <span class="footer__mentions--left"></span>
+            <img src="/public/img/dot.svg" alt="Point de séparation" class="footer__mentions--dot">
+            <span class="footer__mentions--right"></span>
+            <p class="footer__mentions--text">Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="" class="footer__mentions--lien">MMI de Montbéliard</a></p>
+            <span class="footer__mentions--left"></span>
+            <img src="/public/img/dot.svg" alt="Point de séparation" class="footer__mentions--dot">
+            <span class="footer__mentions--right"></span>
+            <p class="footer__mentions--text">© 2023 Oppenheimer - Tous droits réservés - Développé avec ❤️ par Tony MORETTI</p>
+            <span class="footer__mentions--left"></span>
+            <img src="/public/img/dot.svg" alt="Point de séparation" class="footer__mentions--dot">
+            <span class="footer__mentions--right"></span>
+        </div>
+        <div class="footer__social">
+            <h4 class="footer__social--title">Nous suivre</h4>
+            <a href="https://www.instagram.com/"><img src="/public/img/instagram.svg" alt="Logo d'Instagram" class="footer__social--img"></a>
+            <a href="https://www.facebook.com/"><img src="/public/img/facebook.svg" alt="Logo de Facebook" class="footer__social--img"></a>
+            <a href="https://twitter.com/"><img src="/public/img/twitter.svg" alt="Logo de Twitter" class="footer__social--img"></a>
+        </div>
+    </footer>
 </body>
 </html>

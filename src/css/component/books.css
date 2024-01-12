@@ -16,12 +16,33 @@
     margin-right: 1.5rem;
 }
 
+.main__article1--spanmid {
+    display:block;
+    height:1px;
+    background-color:black; 
+    width :50%;
+    margin:auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.main__article1--img {
+    margin-bottom: 1.5rem;
+}
+
 .main__article2--list {
     margin-right: 1.5rem;
 }
 
 .main__article2--img {
     margin-top: 1.5rem;
+}
+
+.main__article2--text {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .carrousel {

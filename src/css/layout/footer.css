@@ -22,7 +22,7 @@
 
 .footer__title--down {
     width: 0.01rem;
-    height: 4rem;
+    height: 8.5rem;
     background-color: var(--white);
     margin: 0.5rem;
 }
@@ -31,7 +31,7 @@
 .footer__title--right,
 .footer__mentions--left,
 .footer__mentions--right {
-    width: 45%;
+    width: 41%;
     height: 0.01rem;
     background-color: var(--white);
     margin: 0.5rem 0;
